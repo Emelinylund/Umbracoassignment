@@ -1,7 +1,6 @@
 {
     "name": "Onatrix RTE",
     "alias": "Onatrix.Rte",
-    "css": [ "/App_Plugins/OnatrixRte/onatrix-rte.css" ],
     "extensions": [
         {
             "type": "tiptapToolbarExtension",
@@ -11,150 +10,72 @@
             "meta": {
                 "alias": "OnatrixStyleMenu",
                 "icon": "icon-palette",
-                "label": "Onatrix styles"
+                "label": "Onatrix Styles"
             },
             "items": [
                 {
-                    "label": "Paragraphs",
+                    "label": "Paragraph Sizes",
                     "items": [
                         {
-                            "label": "XL - 20",
-                            "items": [
-                                {
-                                    "label": "Light",
-                                    "data": {
-                                        "tag": "p",
-                                        "class": "xl-font-light"
-                                    }
-                                },
-                                {
-                                    "label": "Light Italic",
-                                    "data": {
-                                        "tag": "p",
-                                        "class": "xl-font-light-italic"
-                                    }
-                                },
-                                {
-                                    "label": "Normal",
-                                    "data": {
-                                        "tag": "p",
-                                        "class": "xl-font"
-                                    }
-                                },
-                                {
-                                    "label": "Bold",
-                                    "data": {
-                                        "tag": "p",
-                                        "class": "xl-font-bold"
-                                    }
-                                },
-                                {
-                                    "label": "Italic",
-                                    "data": {
-                                        "tag": "p",
-                                        "class": "xl-font-italic"
-                                    }
-                                }
-                            ]
+                            "label": "XL (20px)",
+                            "data": {
+                                "tag": "p",
+                                "class": "text-xl"
+                            }
                         },
                         {
-                            "label": "L - 18",
-                            "items": [
-                                {
-                                    "label": "Light",
-                                    "data": {
-                                        "tag": "p",
-                                        "class": "l-font-light"
-                                    }
-                                },
-                                {
-                                    "label": "Normal",
-                                    "data": {
-                                        "tag": "p",
-                                        "class": "l-font"
-                                    }
-                                },
-                                {
-                                    "label": "Bold",
-                                    "data": {
-                                        "tag": "p",
-                                        "class": "l-font-bold"
-                                    }
-                                },
-                                {
-                                    "label": "Italic",
-                                    "data": {
-                                        "tag": "p",
-                                        "class": "l-font-italic"
-                                    }
-                                }
-                            ]
+                            "label": "L (18px)",
+                            "data": {
+                                "tag": "p",
+                                "class": "text-lg"
+                            }
                         },
                         {
-                            "label": "M - 16",
-                            "items": [
-                                {
-                                    "label": "Light",
-                                    "data": {
-                                        "tag": "p",
-                                        "class": "m-font-light"
-                                    }
-                                },
-                                {
-                                    "label": "Normal",
-                                    "data": {
-                                        "tag": "p",
-                                        "class": "m-font"
-                                    }
-                                },
-                                {
-                                    "label": "Bold",
-                                    "data": {
-                                        "tag": "p",
-                                        "class": "m-font-bold"
-                                    }
-                                },
-                                {
-                                    "label": "Italic",
-                                    "data": {
-                                        "tag": "p",
-                                        "class": "m-font-italic"
-                                    }
-                                }
-                            ]
+                            "label": "M (16px)",
+                            "data": {
+                                "tag": "p",
+                                "class": "text-base"
+                            }
                         },
                         {
-                            "label": "S - 14",
-                            "items": [
-                                {
-                                    "label": "Light",
-                                    "data": {
-                                        "tag": "p",
-                                        "class": "s-font-light"
-                                    }
-                                },
-                                {
-                                    "label": "Normal",
-                                    "data": {
-                                        "tag": "p",
-                                        "class": "s-font"
-                                    }
-                                },
-                                {
-                                    "label": "Bold",
-                                    "data": {
-                                        "tag": "p",
-                                        "class": "s-font-bold"
-                                    }
-                                },
-                                {
-                                    "label": "Italic",
-                                    "data": {
-                                        "tag": "p",
-                                        "class": "s-font-italic"
-                                    }
-                                }
-                            ]
+                            "label": "S (14px)",
+                            "data": {
+                                "tag": "p",
+                                "class": "text-sm"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "label": "Font Weight",
+                    "items": [
+                        {
+                            "label": "Light",
+                            "data": {
+                                "tag": "p",
+                                "class": "font-light"
+                            }
+                        },
+                        {
+                            "label": "Normal",
+                            "data": {
+                                "tag": "p",
+                                "class": "font-normal"
+                            }
+                        },
+                        {
+                            "label": "Bold",
+                            "data": {
+                                "tag": "p",
+                                "class": "font-bold"
+                            }
+                        },
+                        {
+                            "label": "Italic",
+                            "data": {
+                                "tag": "p",
+                                "class": "italic"
+                            }
                         }
                     ]
                 },
@@ -162,47 +83,47 @@
                     "label": "Headings",
                     "items": [
                         {
-                            "label": "Heading 1",
+                            "label": "H1",
                             "data": {
                                 "tag": "h1",
-                                "class": "heading-01"
+                                "class": "text-4xl font-bold text-primary"
                             }
                         },
                         {
-                            "label": "Heading 2",
+                            "label": "H2",
                             "data": {
                                 "tag": "h2",
-                                "class": "heading-02"
+                                "class": "text-3xl font-semibold text-primary"
                             }
                         },
                         {
-                            "label": "Heading 3",
+                            "label": "H3",
                             "data": {
                                 "tag": "h3",
-                                "class": "heading-03"
+                                "class": "text-2xl font-semibold text-primary"
                             }
                         },
                         {
-                            "label": "Heading 4",
+                            "label": "H4",
                             "data": {
                                 "tag": "h4",
-                                "class": "heading-04"
+                                "class": "text-xl font-medium text-primary"
                             }
                         },
                         {
-                            "label": "Heading 5",
+                            "label": "H5",
                             "data": {
                                 "tag": "h5",
-                                "class": "heading-05"
+                                "class": "text-lg font-medium text-primary"
                             }
                         }
                     ]
                 },
                 {
-                    "label": "Bullets",
+                    "label": "Lists",
                     "data": {
                         "tag": "ul",
-                        "class": "rte-ul"
+                        "class": "list-disc list-inside ml-4"
                     }
                 },
                 {
@@ -212,7 +133,7 @@
                             "label": "Full Width",
                             "data": {
                                 "tag": "img",
-                                "class": "img-full-width"
+                                "class": "w-full h-auto rounded-lg"
                             }
                         }
                     ]
@@ -230,44 +151,100 @@
             },
             "items": [
                 {
-                    "label": "Main",
+                    "label": "Primary",
                     "data": {
                         "tag": "span",
-                        "class": "main-color"
+                        "class": "text-primary"
                     },
                     "appearance": { "style": "background-color: #4F5955; color: #fff;" }
                 },
                 {
-                    "label": "Sub-Color-01",
+                    "label": "Secondary",
                     "data": {
                         "tag": "span",
-                        "class": "sub-color-01"
-                    },
-                    "appearance": { "style": "background-color: #F2EDDC; color: #4F5955;" }
-                },
-                {
-                    "label": "Sub-Color-03",
-                    "data": {
-                        "tag": "span",
-                        "class": "sub-color-03"
+                        "class": "text-secondary"
                     },
                     "appearance": { "style": "background-color: #D9C3A9; color: #4F5955;" }
+                },
+                {
+                    "label": "Accent",
+                    "data": {
+                        "tag": "span",
+                        "class": "text-accent"
+                    },
+                    "appearance": { "style": "background-color: #F2EDDC; color: #4F5955;" }
                 },
                 {
                     "label": "White",
                     "data": {
                         "tag": "span",
-                        "class": "white-color"
+                        "class": "text-white"
                     },
-                    "appearance": { "style": "background-color: #fff; color: #4F5955;" }
+                    "appearance": { "style": "background-color: #F2EDDC; color: #4F5955;" }
                 },
                 {
-                    "label": "Gray",
+                    "label": "White 100",
                     "data": {
                         "tag": "span",
-                        "class": "gray-color"
+                        "class": "text-white-100"
+                    },
+                    "appearance": { "style": "background-color: #F7F7F7; color: #4F5955;" }
+                },
+                {
+                    "label": "Dark",
+                    "data": {
+                        "tag": "span",
+                        "class": "text-dark"
+                    },
+                    "appearance": { "style": "background-color: #0E0E0E; color: #fff;" }
+                },
+                {
+                    "label": "Main Light",
+                    "data": {
+                        "tag": "span",
+                        "class": "text-main-light"
+                    },
+                    "appearance": { "style": "background-color: #606966; color: #fff;" }
+                },
+                {
+                    "label": "Gray 400",
+                    "data": {
+                        "tag": "span",
+                        "class": "text-gray-400"
+                    },
+                    "appearance": { "style": "background-color: #4B5264; color: #fff;" }
+                },
+                {
+                    "label": "Body Text",
+                    "data": {
+                        "tag": "span",
+                        "class": "text-body-text"
+                    },
+                    "appearance": { "style": "background-color: #535656; color: #fff;" }
+                },
+                {
+                    "label": "Body Text 100",
+                    "data": {
+                        "tag": "span",
+                        "class": "text-body-text-100"
                     },
                     "appearance": { "style": "background-color: #999999; color: #fff;" }
+                },
+                {
+                    "label": "Notel ",
+                    "data": {
+                        "tag": "span",
+                        "class": "text-notel"
+                    },
+                    "appearance": { "style": "background-color: #9C9EA6; color: #fff;" }
+                },
+                {
+                    "label": "Neutral",
+                    "data": {
+                        "tag": "span",
+                        "class": "text-neutral"
+                    },
+                    "appearance": { "style": "background-color: #ffffff; color: #4F5955; border: 1px solid #EAEAEA;" }
                 }
             ]
         }
