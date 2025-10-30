@@ -1,4 +1,6 @@
 ﻿@import "tailwindcss";
+@import "./forms.css";
+@import "./rte.css";    
 
 
 @theme {
@@ -25,10 +27,9 @@ body {
     @apply font-poppins;
 }
 
-.rte h3 {
-    @apply text-[2.5rem] text-primary font-bold;
-}
+
 
 .current a {
     @apply text-secondary;
 }
+

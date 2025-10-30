@@ -1,0 +1,275 @@
+{
+    "name": "Onatrix RTE",
+    "alias": "Onatrix.Rte",
+    "css": [ "/App_Plugins/OnatrixRte/onatrix-rte.css" ],
+    "extensions": [
+        {
+            "type": "tiptapToolbarExtension",
+            "kind": "styleMenu",
+            "alias": "Onatrix.Tiptap.StyleMenu",
+            "name": "Onatrix Tiptap Style Menu",
+            "meta": {
+                "alias": "OnatrixStyleMenu",
+                "icon": "icon-palette",
+                "label": "Onatrix styles"
+            },
+            "items": [
+                {
+                    "label": "Paragraphs",
+                    "items": [
+                        {
+                            "label": "XL - 20",
+                            "items": [
+                                {
+                                    "label": "Light",
+                                    "data": {
+                                        "tag": "p",
+                                        "class": "xl-font-light"
+                                    }
+                                },
+                                {
+                                    "label": "Light Italic",
+                                    "data": {
+                                        "tag": "p",
+                                        "class": "xl-font-light-italic"
+                                    }
+                                },
+                                {
+                                    "label": "Normal",
+                                    "data": {
+                                        "tag": "p",
+                                        "class": "xl-font"
+                                    }
+                                },
+                                {
+                                    "label": "Bold",
+                                    "data": {
+                                        "tag": "p",
+                                        "class": "xl-font-bold"
+                                    }
+                                },
+                                {
+                                    "label": "Italic",
+                                    "data": {
+                                        "tag": "p",
+                                        "class": "xl-font-italic"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "label": "L - 18",
+                            "items": [
+                                {
+                                    "label": "Light",
+                                    "data": {
+                                        "tag": "p",
+                                        "class": "l-font-light"
+                                    }
+                                },
+                                {
+                                    "label": "Normal",
+                                    "data": {
+                                        "tag": "p",
+                                        "class": "l-font"
+                                    }
+                                },
+                                {
+                                    "label": "Bold",
+                                    "data": {
+                                        "tag": "p",
+                                        "class": "l-font-bold"
+                                    }
+                                },
+                                {
+                                    "label": "Italic",
+                                    "data": {
+                                        "tag": "p",
+                                        "class": "l-font-italic"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "label": "M - 16",
+                            "items": [
+                                {
+                                    "label": "Light",
+                                    "data": {
+                                        "tag": "p",
+                                        "class": "m-font-light"
+                                    }
+                                },
+                                {
+                                    "label": "Normal",
+                                    "data": {
+                                        "tag": "p",
+                                        "class": "m-font"
+                                    }
+                                },
+                                {
+                                    "label": "Bold",
+                                    "data": {
+                                        "tag": "p",
+                                        "class": "m-font-bold"
+                                    }
+                                },
+                                {
+                                    "label": "Italic",
+                                    "data": {
+                                        "tag": "p",
+                                        "class": "m-font-italic"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "label": "S - 14",
+                            "items": [
+                                {
+                                    "label": "Light",
+                                    "data": {
+                                        "tag": "p",
+                                        "class": "s-font-light"
+                                    }
+                                },
+                                {
+                                    "label": "Normal",
+                                    "data": {
+                                        "tag": "p",
+                                        "class": "s-font"
+                                    }
+                                },
+                                {
+                                    "label": "Bold",
+                                    "data": {
+                                        "tag": "p",
+                                        "class": "s-font-bold"
+                                    }
+                                },
+                                {
+                                    "label": "Italic",
+                                    "data": {
+                                        "tag": "p",
+                                        "class": "s-font-italic"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "label": "Headings",
+                    "items": [
+                        {
+                            "label": "Heading 1",
+                            "data": {
+                                "tag": "h1",
+                                "class": "heading-01"
+                            }
+                        },
+                        {
+                            "label": "Heading 2",
+                            "data": {
+                                "tag": "h2",
+                                "class": "heading-02"
+                            }
+                        },
+                        {
+                            "label": "Heading 3",
+                            "data": {
+                                "tag": "h3",
+                                "class": "heading-03"
+                            }
+                        },
+                        {
+                            "label": "Heading 4",
+                            "data": {
+                                "tag": "h4",
+                                "class": "heading-04"
+                            }
+                        },
+                        {
+                            "label": "Heading 5",
+                            "data": {
+                                "tag": "h5",
+                                "class": "heading-05"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "label": "Bullets",
+                    "data": {
+                        "tag": "ul",
+                        "class": "rte-ul"
+                    }
+                },
+                {
+                    "label": "Images",
+                    "items": [
+                        {
+                            "label": "Full Width",
+                            "data": {
+                                "tag": "img",
+                                "class": "img-full-width"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "tiptapToolbarExtension",
+            "kind": "styleMenu",
+            "alias": "Onatrix.Tiptap.BrandColors",
+            "name": "Onatrix Brand Colors",
+            "meta": {
+                "alias": "OnatrixBrandColors",
+                "label": "Onatrix Colors"
+            },
+            "items": [
+                {
+                    "label": "Main",
+                    "data": {
+                        "tag": "span",
+                        "class": "main-color"
+                    },
+                    "appearance": { "style": "background-color: #4F5955; color: #fff;" }
+                },
+                {
+                    "label": "Sub-Color-01",
+                    "data": {
+                        "tag": "span",
+                        "class": "sub-color-01"
+                    },
+                    "appearance": { "style": "background-color: #F2EDDC; color: #4F5955;" }
+                },
+                {
+                    "label": "Sub-Color-03",
+                    "data": {
+                        "tag": "span",
+                        "class": "sub-color-03"
+                    },
+                    "appearance": { "style": "background-color: #D9C3A9; color: #4F5955;" }
+                },
+                {
+                    "label": "White",
+                    "data": {
+                        "tag": "span",
+                        "class": "white-color"
+                    },
+                    "appearance": { "style": "background-color: #fff; color: #4F5955;" }
+                },
+                {
+                    "label": "Gray",
+                    "data": {
+                        "tag": "span",
+                        "class": "gray-color"
+                    },
+                    "appearance": { "style": "background-color: #999999; color: #fff;" }
+                }
+            ]
+        }
+    ]
+}

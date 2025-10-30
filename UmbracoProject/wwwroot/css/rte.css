@@ -1,0 +1,11 @@
+﻿.rte h3 {
+    @apply text-[2.5rem] text-primary font-bold;
+}
+
+.rte {
+    @apply text-[1.2rem] text-primary font-bold;
+}
+
+.img-full-width {
+    @apply w-full h-auto object-cover;
+}
