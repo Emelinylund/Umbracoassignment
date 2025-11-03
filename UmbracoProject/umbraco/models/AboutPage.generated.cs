@@ -20,7 +20,7 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 {
 	/// <summary>About Page</summary>
 	[PublishedModel("aboutPage")]
-	public partial class AboutPage : PublishedContentModel, IPageHeader
+	public partial class AboutPage : PublishedContentModel, IPageFooter, IPageHeader
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
