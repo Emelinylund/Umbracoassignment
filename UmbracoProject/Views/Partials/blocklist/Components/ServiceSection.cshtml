@@ -4,7 +4,7 @@
 	var content = (ContentModels.ServiceSection)Model.Content;
 	var settings = Model.Settings as ContentModels.ServiceSettings;
 
-	var sectionColor = settings?.ServiceBgColor?.Color ?? "#ffffff";
+	var sectionColor = settings?.ServiceBgColor;
 }
 
 <section class="py-[4rem] bg-[@sectionColor]">

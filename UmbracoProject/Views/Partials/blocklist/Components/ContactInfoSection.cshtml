@@ -1,0 +1,52 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<Umbraco.Cms.Core.Models.Blocks.BlockListItem>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+    var content = (ContentModels.ContactInfoSection)Model.Content;
+    var settings = Model.Settings as ContentModels.ContactInfoSettings;
+    var siteSettings = Umbraco.ContentAtRoot().OfType<SiteSettings>().FirstOrDefault();
+
+    var sectionColor = settings?.ContactInfoSectionColor;
+}
+
+<section class="flex flex-col bg-(@sectionColor) md:flex-row items-center ">
+    <!-- Left side: Image -->
+    <div class="w-full md:w-1/2 flex justify-center mb-10 md:mb-0 relative">
+        
+        <img src="@content.ContactInfoSectionImage.Url()" alt="Contact Image" class=" max-w-sm w-full object-cover" />
+    </div>
+
+    <!-- Right side: Text and contact info -->
+    <div class="w-full md:w-1/2 space-y-6 md:pl-12">
+        <h1 class="text-4xl font-extrabold text-gray-800 leading-tight max-w-md">
+            @content.ContactInfoSectionTitle
+        </h1>
+
+
+        <div class="space-y-4 text-gray-600">
+            <p class="flex items-center gap-3">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>
+                    <span class="block font-semibold text-gray-800">Office location</span>
+                    @(siteSettings?.ContactAddress ?? "Klarabergsviadukten 90, 111 52 Stockholm")
+                </span>
+            </p>
+
+            <p class="flex items-center gap-3">
+                <i class="fa-solid fa-phone"></i>
+                <span>
+                    <span class="block font-semibold text-gray-800">Phone number</span>
+                    @(siteSettings?.ContactPhone ?? "+46 8 123 456 75")
+                </span>
+            </p>
+
+            <p class="flex items-center gap-3">
+                <i class="fa-solid fa-envelope"></i>
+                <span>
+                    <span class="block font-semibold text-gray-800">E-mail address</span>
+                    @(siteSettings?.ContactEmail ?? "info@company.com")
+                </span>
+            </p>
+        </div>
+    </div>
+</section>
+
