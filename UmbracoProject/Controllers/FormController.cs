@@ -27,5 +27,16 @@ namespace UmbracoProject.Controllers
 
             return RedirectToCurrentUmbracoPage();
         }
+        public IActionResult HandleContactUsForm(ContactUsFormViewModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return CurrentUmbracoPage();
+            }
+
+            // Work with form data here
+
+            return RedirectToCurrentUmbracoPage();
+        }
     }
 }
