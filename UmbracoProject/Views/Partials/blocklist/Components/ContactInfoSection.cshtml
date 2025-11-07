@@ -5,10 +5,12 @@
     var settings = Model.Settings as ContentModels.ContactInfoSettings;
     var siteSettings = Umbraco.ContentAtRoot().OfType<SiteSettings>().FirstOrDefault();
 
-    var sectionColor = settings?.ContactInfoSectionColor;
+    var sectionColor = settings?.ContactInfoSectionColor ?? "#F7F7F7";
+
 }
 
-<section class="flex flex-col bg-(@sectionColor) md:flex-row items-center ">
+<section class="flex flex-col md:flex-row items-center" style="background-color:@sectionColor;">
+
     <!-- Left side: Image -->
     <div class="w-full md:w-1/2 flex justify-center mb-10 md:mb-0 relative">
         

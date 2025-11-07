@@ -38,5 +38,17 @@ namespace UmbracoProject.Controllers
 
             return RedirectToCurrentUmbracoPage();
         }
+
+        public IActionResult HandleQuestionForm(QuestionFormViewModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return CurrentUmbracoPage();
+            }
+
+            // Work with form data here
+
+            return RedirectToCurrentUmbracoPage();
+        }
     }
 }

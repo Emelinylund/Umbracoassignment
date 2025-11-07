@@ -66,12 +66,28 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString ServiceDetailBody => this.Value<global::Umbraco.Cms.Core.Strings.IHtmlEncodedString>(_publishedValueFallback, "serviceDetailBody");
 
 		///<summary>
+		/// Contact Info
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "16.2.0+4eae48e")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("serviceDetailContactInfo")]
+		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel ServiceDetailContactInfo => this.Value<global::Umbraco.Cms.Core.Models.Blocks.BlockListModel>(_publishedValueFallback, "serviceDetailContactInfo");
+
+		///<summary>
 		/// Excerpt
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "16.2.0+4eae48e")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("serviceDetailExcerpt")]
 		public virtual string ServiceDetailExcerpt => this.Value<string>(_publishedValueFallback, "serviceDetailExcerpt");
+
+		///<summary>
+		/// Form
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "16.2.0+4eae48e")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("serviceDetailForm")]
+		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockListModel ServiceDetailForm => this.Value<global::Umbraco.Cms.Core.Models.Blocks.BlockListModel>(_publishedValueFallback, "serviceDetailForm");
 
 		///<summary>
 		/// Thumbnail
