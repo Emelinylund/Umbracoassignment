@@ -19,14 +19,14 @@
 
     <!-- Right side: Text and contact info -->
     <div class="w-full md:w-1/2 space-y-6 md:pl-12">
-        <h1 class="text-4xl font-extrabold text-gray-800 leading-tight max-w-md">
+        <h1 class="text-4xl font-extrabold text-primary leading-tight max-w-md">
             @content.ContactInfoSectionTitle
         </h1>
 
 
         <div class="space-y-4 text-gray-600">
             <p class="flex items-center gap-3">
-                <i class="fa-solid fa-location-dot"></i>
+                <i class="fa-solid fa-location-dot text-secondary"></i>
                 <span>
                     <span class="block font-semibold text-gray-800">Office location</span>
                     @(siteSettings?.ContactAddress ?? "Klarabergsviadukten 90, 111 52 Stockholm")
@@ -34,7 +34,7 @@
             </p>
 
             <p class="flex items-center gap-3">
-                <i class="fa-solid fa-phone"></i>
+                <i class="fa-solid fa-phone text-secondary"></i>
                 <span>
                     <span class="block font-semibold text-gray-800">Phone number</span>
                     @(siteSettings?.ContactPhone ?? "+46 8 123 456 75")
@@ -42,7 +42,7 @@
             </p>
 
             <p class="flex items-center gap-3">
-                <i class="fa-solid fa-envelope"></i>
+                <i class="fa-solid fa-envelope text-secondary"></i>
                 <span>
                     <span class="block font-semibold text-gray-800">E-mail address</span>
                     @(siteSettings?.ContactEmail ?? "info@company.com")

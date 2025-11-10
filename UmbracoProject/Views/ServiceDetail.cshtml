@@ -52,7 +52,10 @@
 		</div>
 	</div>
 
-	<partial name="Partials/Forms/_QuestionForm" model="new QuestionFormViewModel()"/>
-		
+
+    <partial name="Partials/Forms/_QuestionForm" model="new QuestionFormViewModel()" />
+
     @Html.GetBlockListHtml(Model.ServiceDetailContactInfo)
+
+    
 </section>

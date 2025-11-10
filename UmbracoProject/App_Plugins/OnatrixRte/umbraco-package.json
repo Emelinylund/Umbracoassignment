@@ -26,13 +26,13 @@
                                         "tag": "p",
                                         "class": "text-rte-xl font-light"
                                     },
-                                    "apperance": {}
+                                    "appearance": {}
                                 },
                                 {
                                     "label": "Normal",
                                     "data": {
                                         "tag": "p",
-                                        "class": "text-rte-xl font-regular"
+                                        "class": "text-rte-xl font-normal"
                                     },
                                     "apperance": {}
                                 },
@@ -42,7 +42,7 @@
                                         "tag": "p",
                                         "class": "text-rte-xl font-bold"
                                     },
-                                    "apperance": {}
+                                    "appearance": {}
                                 }
 
                             ]
@@ -61,7 +61,7 @@
                                     "label": "Normal",
                                     "data": {
                                         "tag": "p",
-                                        "class": "text-rte-lg font-regular"
+                                        "class": "text-rte-lg font-normal"
                                     }
                                 },
                                 {
@@ -94,7 +94,7 @@
                                     "label": "Normal",
                                     "data": {
                                         "tag": "p",
-                                        "class": "text-rte-md font-regular"
+                                        "class": "text-rte-md font-normal"
                                     }
                                 },
                                 {
@@ -127,7 +127,7 @@
                                     "label": "Normal",
                                     "data": {
                                         "tag": "p",
-                                        "class": "text-rte-sm font-regular"
+                                        "class": "text-rte-sm font-normal"
                                     }
                                 },
                                 {
@@ -160,7 +160,7 @@
                                     "label": "Normal",
                                     "data": {
                                         "tag": "p",
-                                        "class": "text-rte-xs font-regular"
+                                        "class": "text-rte-xs font-normal"
                                     }
                                 },
                                 {

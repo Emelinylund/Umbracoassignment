@@ -6,15 +6,16 @@ using Umbraco.Cms.Core.Services;
 using Umbraco.Cms.Core.Web;
 using Umbraco.Cms.Infrastructure.Persistence;
 using Umbraco.Cms.Web.Website.Controllers;
+using UmbracoProject.Services;
 using UmbracoProject.ViewModels;
 
 namespace UmbracoProject.Controllers
 {
-    public class FormController : SurfaceController
+    public class FormController(IUmbracoContextAccessor umbracoContextAccessor, IUmbracoDatabaseFactory databaseFactory, ServiceContext services, AppCaches appCaches, IProfilingLogger profilingLogger, IPublishedUrlProvider publishedUrlProvider, FormSubmissionsService formSubmissions) : SurfaceController(umbracoContextAccessor, databaseFactory, services, appCaches, profilingLogger, publishedUrlProvider)
     {
-        public FormController(IUmbracoContextAccessor umbracoContextAccessor, IUmbracoDatabaseFactory databaseFactory, ServiceContext services, AppCaches appCaches, IProfilingLogger profilingLogger, IPublishedUrlProvider publishedUrlProvider) : base(umbracoContextAccessor, databaseFactory, services, appCaches, profilingLogger, publishedUrlProvider)
-        {
-        }
+        private readonly FormSubmissionsService _formSubmissions = formSubmissions;
+
+        
 
         public IActionResult HandleCallbackForm(CallbackFormViewModel model)
         {
@@ -23,7 +24,14 @@ namespace UmbracoProject.Controllers
                 return CurrentUmbracoPage();
             }
 
-            // Work with form data here
+            var result = _formSubmissions.SaveCallbackRequest(model);
+            if (!result)
+            {
+                TempData["FormError"] = "Something went wrong. Please try again later.";
+                return RedirectToCurrentUmbracoPage();
+            }
+
+            TempData["FormSuccess"] = "Your request has been submitted we will get back to you asap.";
 
             return RedirectToCurrentUmbracoPage();
         }
