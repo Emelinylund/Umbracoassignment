@@ -11,17 +11,20 @@
 
 <section class="flex flex-col md:flex-row items-center" style="background-color:@sectionColor;">
 
-    <!-- Left side: Image -->
-    <div class="w-full md:w-1/2 flex justify-center mb-10 md:mb-0 relative">
-        
-        <img src="@content.ContactInfoSectionImage.Url()" alt="Contact Image" class=" max-w-sm w-full object-cover" />
+    
+    <div class="w-full md:w-1/2 flex justify-end mb-10 md:mb-0 relative pt-10 pr-20">
+        <img src="@content.ContactInfoSectionImage.Url()" alt="Contact Image" class="w-full max-w-[500px] object-cover" />
+
+
     </div>
 
-    <!-- Right side: Text and contact info -->
+
+    
     <div class="w-full md:w-1/2 space-y-6 md:pl-12">
         <h1 class="text-4xl font-extrabold text-primary leading-tight max-w-md">
-            @content.ContactInfoSectionTitle
+            @Html.Raw(content.ContactInfoSectionTitle.Replace(Environment.NewLine, "<br />"))
         </h1>
+
 
 
         <div class="space-y-4 text-gray-600">

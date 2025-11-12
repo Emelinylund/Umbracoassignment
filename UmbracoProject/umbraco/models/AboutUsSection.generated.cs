@@ -64,13 +64,5 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("aboutUsSectionText")]
 		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString AboutUsSectionText => this.Value<global::Umbraco.Cms.Core.Strings.IHtmlEncodedString>(_publishedValueFallback, "aboutUsSectionText");
-
-		///<summary>
-		/// About Us Section Title
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "16.2.0+4eae48e")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("aboutUsSectionTitle")]
-		public virtual string AboutUsSectionTitle => this.Value<string>(_publishedValueFallback, "aboutUsSectionTitle");
 	}
 }

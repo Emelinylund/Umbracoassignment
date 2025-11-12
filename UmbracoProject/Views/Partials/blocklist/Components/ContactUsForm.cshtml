@@ -7,9 +7,12 @@
 }
 
 <section class="relative bg-cover bg-center" style="background-image: url('/images/map 1.svg');">
-    <div class="h-[400px] md:h-[500px]"></div> <!-- höjd på bakgrundsbilden -->
+   
+    <div class="absolute inset-0 bg-black/30"></div> 
 
-    <div class="relative max-w-4xl mx-auto bg-white-100 p-10 text-center shadow-xl p-10 -mt-34">
+    <div class="h-[400px] md:h-[500px]"></div> 
+
+    <div class="relative max-w-6xl mx-auto bg-white-100 p-10 text-center shadow-xl">
         <p class="text-sm font-semibold text-secondary tracking-widest uppercase mb-2">
             @Html.Raw(content.FormLabel)
         </p>
@@ -18,9 +21,10 @@
             @Html.Raw(content.FormTitle)
         </h1>
 
-        <p class="text-gray-600 mb-8">
-            @Html.Raw(content.FormDescription)
+        <p class="text-gray-600 italic mb-8">
+            @Html.Raw(content.FormDescription.Replace("\r\n", "<br />").Replace("\n", "<br />"))
         </p>
+
 
         <partial name="Partials/Forms/_ContactUsForm" model="new ContactUsFormViewModel()" />
     </div>

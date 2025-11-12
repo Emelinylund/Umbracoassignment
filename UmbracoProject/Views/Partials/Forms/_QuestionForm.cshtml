@@ -10,7 +10,7 @@
    
         <div class="flex flex-col gap-6">
 
-            <!-- Name + Email -->
+            
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                     <label asp-for="Name" class="sr-only"></label>
@@ -27,7 +27,7 @@
                 </div>
             </div>
 
-            <!-- Question -->
+           
             <div>
                 <label asp-for="Question" class="sr-only"></label>
                 <textarea asp-for="Question" rows="5" placeholder="@Html.DisplayNameFor(x => x.Question)"
@@ -35,7 +35,7 @@
                 <span asp-validation-for="Question" class="text-sm text-red-500"></span>
             </div>
 
-            <!-- Submit -->
+            
             <div> 
                 <button type="submit" class="bg-primary text-white font-semibold py-3 px-10 rounded-md hover:bg-primary/90 transition-all"> Submit </button>
                 </div>

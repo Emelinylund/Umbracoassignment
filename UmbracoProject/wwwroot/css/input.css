@@ -3,6 +3,8 @@
 @import "./rte.css";
 
 
+
+
 @theme {
     --color-primary: #4F5955;
     --color-neutral: #ffffff;
@@ -21,7 +23,7 @@
     --container-padding: 1rem;
     --transition-time: all 0.2s;
 
-    --font-poppins: "poppins", sans-serif;
+    --font-poppins: "Poppins", sans-serif;
 
     --text-rte-xl: 4.375rem;
     --text-rte-lg: 2.5rem;

@@ -20,31 +20,26 @@
                             "label": "XL - 70",
                             "items": [
                                 {
-
                                     "label": "Light",
                                     "data": {
                                         "tag": "p",
                                         "class": "text-rte-xl font-light"
-                                    },
-                                    "appearance": {}
+                                    }
                                 },
                                 {
                                     "label": "Normal",
                                     "data": {
                                         "tag": "p",
                                         "class": "text-rte-xl font-normal"
-                                    },
-                                    "apperance": {}
+                                    }
                                 },
                                 {
                                     "label": "Bold",
                                     "data": {
                                         "tag": "p",
                                         "class": "text-rte-xl font-bold"
-                                    },
-                                    "appearance": {}
+                                    }
                                 }
-
                             ]
                         },
                         {
@@ -239,134 +234,132 @@
                             ]
                         }
                     ]
-                },
-
+                }
+            ]
+        },
+        {
+            "type": "tiptapToolbarExtension",
+            "kind": "styleMenu",
+            "alias": "Onatrix.Tiptap.BrandColors",
+            "name": "Onatrix Brand Colors",
+            "meta": {
+                "alias": "OnatrixBrandColors",
+                "label": "Onatrix Colors"
+            },
+            "items": [
                 {
-                    "type": "tiptapToolbarExtension",
-                    "kind": "styleMenu",
-                    "alias": "Onatrix.Tiptap.BrandColors",
-                    "name": "Onatrix Brand Colors",
-                    "meta": {
-                        "alias": "OnatrixBrandColors",
-                        "label": "Onatrix Colors"
+                    "label": "Primary",
+                    "data": {
+                        "tag": "span",
+                        "class": "text-primary"
                     },
-                    "items": [
-                        {
-                            "label": "Primary",
-                            "data": {
-                                "tag": "span",
-                                "class": "text-primary"
-                            },
-                            "appearance": { "style": "background-color:#4F5955; color:#fff; padding:5px;" }
-                        },
-                        {
-                            "label": "Secondary",
-                            "data": {
-                                "tag": "span",
-                                "class": "text-secondary"
-                            },
-                            "appearance": { "style": "background-color:#D9C3A9; color:#fff; padding:5px;" }
-                        },
-                        {
-                            "label": "Accent",
-                            "data": {
-                                "tag": "span",
-                                "class": "text-accent"
-                            },
-                            "appearance": { "style": "background-color: #F2EDDC; color: #4F5955;" }
-                        },
-                        {
-                            "label": "White",
-                            "data": {
-                                "tag": "span",
-                                "class": "text-white"
-                            },
-                            "appearance": { "style": "background-color: #F2EDDC; color: #4F5955;" }
-                        },
-                        {
-                            "label": "White 100",
-                            "data": {
-                                "tag": "span",
-                                "class": "text-white-100"
-                            },
-                            "appearance": { "style": "background-color: #F7F7F7; color: #4F5955;" }
-                        },
-                        {
-                            "label": "Dark",
-                            "data": {
-                                "tag": "span",
-                                "class": "text-dark"
-                            },
-                            "appearance": { "style": "background-color: #0E0E0E; color: #fff;" }
-                        },
-                        {
-                            "label": "Main Light",
-                            "data": {
-                                "tag": "span",
-                                "class": "text-main-light"
-                            },
-                            "appearance": { "style": "background-color: #606966; color: #fff;" }
-                        },
-                        {
-                            "label": "Gray 400",
-                            "data": {
-                                "tag": "span",
-                                "class": "text-gray-400"
-                            },
-                            "appearance": { "style": "background-color: #4B5264; color: #fff;" }
-                        },
-                        {
-                            "label": "Body Text",
-                            "data": {
-                                "tag": "span",
-                                "class": "text-body-text"
-                            },
-                            "appearance": { "style": "background-color: #535656; color: #fff;" }
-                        },
-                        {
-                            "label": "Body Text 100",
-                            "data": {
-                                "tag": "span",
-                                "class": "text-body-text-100"
-                            },
-                            "appearance": { "style": "background-color: #999999; color: #fff;" }
-                        },
-                        {
-                            "label": "Notel ",
-                            "data": {
-                                "tag": "span",
-                                "class": "text-notel"
-                            },
-                            "appearance": { "style": "background-color: #9C9EA6; color: #fff;" }
-                        },
-                        {
-                            "label": "Neutral",
-                            "data": {
-                                "tag": "span",
-                                "class": "text-neutral"
-                            },
-                            "appearance": { "style": "background-color: #ffffff; color: #4F5955; border: 1px solid #EAEAEA;" }
-                        },
-                        {
-                            "label": "Body",
-                            "data": {
-                                "tag": "span",
-                                "class": "text-body-text"
-                            },
-                            "appearance": { "style": "background-color: #535656; color: #fff; padding:5px;" }
-                        },
-                        {
-                            "label": "Body-Light",
-                            "data": {
-                                "tag": "span",
-                                "class": "text-body-text-100"
-                            },
-                            "appearance": { "style": "background-color: #999999; color: #fff; padding:5px;" }
-                        }
-                    ]
+                    "appearance": { "style": "background-color:#4F5955; color:#fff; padding:5px;" }
+                },
+                {
+                    "label": "Secondary",
+                    "data": {
+                        "tag": "span",
+                        "class": "text-secondary"
+                    },
+                    "appearance": { "style": "background-color:#D9C3A9; color:#fff; padding:5px;" }
+                },
+                {
+                    "label": "Accent",
+                    "data": {
+                        "tag": "span",
+                        "class": "text-accent"
+                    },
+                    "appearance": { "style": "background-color:#F2EDDC; color:#4F5955;" }
+                },
+                {
+                    "label": "White",
+                    "data": {
+                        "tag": "span",
+                        "class": "text-white"
+                    },
+                    "appearance": { "style": "background-color:#F2EDDC; color:#4F5955;" }
+                },
+                {
+                    "label": "White 100",
+                    "data": {
+                        "tag": "span",
+                        "class": "text-white-100"
+                    },
+                    "appearance": { "style": "background-color:#F7F7F7; color:#4F5955;" }
+                },
+                {
+                    "label": "Dark",
+                    "data": {
+                        "tag": "span",
+                        "class": "text-dark"
+                    },
+                    "appearance": { "style": "background-color:#0E0E0E; color:#fff;" }
+                },
+                {
+                    "label": "Main Light",
+                    "data": {
+                        "tag": "span",
+                        "class": "text-main-light"
+                    },
+                    "appearance": { "style": "background-color:#606966; color:#fff;" }
+                },
+                {
+                    "label": "Gray 400",
+                    "data": {
+                        "tag": "span",
+                        "class": "text-gray-400"
+                    },
+                    "appearance": { "style": "background-color:#4B5264; color:#fff;" }
+                },
+                {
+                    "label": "Body Text",
+                    "data": {
+                        "tag": "span",
+                        "class": "text-body-text"
+                    },
+                    "appearance": { "style": "background-color:#535656; color:#fff;" }
+                },
+                {
+                    "label": "Body Text 100",
+                    "data": {
+                        "tag": "span",
+                        "class": "text-body-text-100"
+                    },
+                    "appearance": { "style": "background-color:#999999; color:#fff;" }
+                },
+                {
+                    "label": "Notel",
+                    "data": {
+                        "tag": "span",
+                        "class": "text-notel"
+                    },
+                    "appearance": { "style": "background-color:#9C9EA6; color:#fff;" }
+                },
+                {
+                    "label": "Neutral",
+                    "data": {
+                        "tag": "span",
+                        "class": "text-neutral"
+                    },
+                    "appearance": { "style": "background-color:#ffffff; color:#4F5955; border:1px solid #EAEAEA;" }
+                },
+                {
+                    "label": "Body",
+                    "data": {
+                        "tag": "span",
+                        "class": "text-body-text"
+                    },
+                    "appearance": { "style": "background-color:#535656; color:#fff; padding:5px;" }
+                },
+                {
+                    "label": "Body-Light",
+                    "data": {
+                        "tag": "span",
+                        "class": "text-body-text-100"
+                    },
+                    "appearance": { "style": "background-color:#999999; color:#fff; padding:5px;" }
                 }
             ]
         }
     ]
 }
-

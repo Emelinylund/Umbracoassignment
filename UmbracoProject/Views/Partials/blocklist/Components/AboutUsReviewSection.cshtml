@@ -9,19 +9,19 @@
 <section class="w-full bg-white-100">
     <div class="flex flex-col md:flex-row-reverse items-center justify-center gap-10 md:gap-20 max-w-6xl mx-auto px-6">
         <!-- Right side: Image -->
-        <div class="w-full h-full flex justify-center relative">
+        <div class="w-full h-full -mr-60 flex relative">
             <img src="@content.AboutUsReviewImage.Url()" alt="About Us Image"
                  class=" max-w w-full " />
         </div>
 
         <!-- Left side: Text content -->
         <div class="w-full md:w-[45%] space-y-6">
-            <h2 class="text-sm font-semibold text-secondary tracking-widest uppercase mb-2">
+            <h2 class="font-semibold text-secondary text-[14px] tracking-widest uppercase mb-2">
                 @content.AboutUsReviewSectionLabel
             </h2>
 
             <h1 class="text-3xl font-extrabold text-primary leading-tight">
-                @content.AboutUsReviewTitle
+                @Html.Raw(content.AboutUsReviewTitle.Replace(Environment.NewLine, "<br />"))
             </h1>
 
             <p class="text-gray-600 text-lg leading-relaxed">
@@ -37,8 +37,8 @@
             </div>
 
             <div>
-                <p class="font-semibold text-gray-800">Kevin Gardner</p>
-                <p class="text-gray-500">Swebank</p>
+                <p class="font-semibold text-gray-500 text-[14px]">Kevin Gardner</p>
+                <p class="text-gray-800 italic text-[20px]">Swedbank</p>
             </div>
         </div>
 
